@@ -1,0 +1,61 @@
+<div clas='container' style='width: 80vw; margin: auto;'>
+  ​
+  <!-- Headline -->
+  <div class='row' style='margin-bottom: 40px'>
+    <div class='col-12'>
+      <p class="teams-presented" style='text-align:center;'>
+        Teams presented from Best to Worst ({{today}})
+      </h1>
+    </div>
+  </div>
+
+  {{#each teamsInfo as |team|}}
+    <h2>{{team.name}}</h2>
+    <table class='table'>
+      <thead class='table-dark'>
+        <tr>
+          <th scope='col'>Name</th>
+          <th scope='col'>Points</th>
+          <th scope='col'>Rebounds</th>
+          <th scope='col'>Assists</th>
+          <th scope='col'>Steals</th>
+          <th scope='col'>Fantasy Points</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th scope='row'>{{team.player_one_info.name}}</th>
+          <th>{{team.player_one_info.points_scored}}</th>
+          <th>{{team.player_one_info.rebounds}}</th>
+          <th>{{team.player_one_info.assists}}</th>
+          <th>{{team.player_one_info.steals}}</th>
+          <th>{{team.player_one_info.fantasy_points}}</th>
+        </tr>
+        <tr>
+          <th scope='row'>{{team.player_two_info.name}}</th>
+          <th>{{team.player_two_info.points_scored}}</th>
+          <th>{{team.player_two_info.rebounds}}</th>
+          <th>{{team.player_two_info.assists}}</th>
+          <th>{{team.player_two_info.steals}}</th>
+          <th>{{team.player_two_info.fantasy_points}}</th>
+        </tr>
+        <tr>
+          <th scope='row'>{{team.player_three_info.name}}</th>
+          <th>{{team.player_three_info.points_scored}}</th>
+          <th>{{team.player_three_info.rebounds}}</th>
+          <th>{{team.player_three_info.assists}}</th>
+          <th>{{team.player_three_info.steals}}</th>
+          <th>{{team.player_three_info.fantasy_points}}</th>
+        </tr>
+        <tr>
+          <th></th>
+          <th></th>
+          <th></th>
+          <th></th>
+          <th>Fantasy Point Total:</th>
+          <th>{{team.fantasy_total}}</th>
+        </tr>
+      </tbody>
+    </table>
+  {{/each}}
+</div>

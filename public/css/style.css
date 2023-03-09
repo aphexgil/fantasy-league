@@ -1,0 +1,130 @@
+header,
+.project:not(:last-child) {
+  border-bottom: 1px solid #ccc;
+}
+
+body {
+  background-image: url('../assets/floor.png');
+}
+
+.no-button {
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  color: #1b89bc;
+  text-decoration: none;
+  font-size: 100%;
+}
+
+.no-button:hover {
+  color: #065b83;
+  text-decoration: underline;
+}
+
+.dollar-amount {
+  color: #056605;
+  font-weight: bold;
+  margin-left: -5px;
+}
+
+#home-head {
+  -webkit-text-stroke-width: 2px;
+  -webkit-text-stroke-color: black;
+  color: #df0505;
+  font-size: 90px;
+  font-family: 'Passion One';
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  text-align: center;
+}
+
+.d-board-head {
+  font-family: 'Passion One';
+  font-size: 90px;
+}
+
+.select-your {
+  font-family: 'Passion One';
+  font-size: 50px;
+}
+
+.team-build {
+  -webkit-text-stroke-width: 2px;
+  -webkit-text-stroke-color: black;
+  color: #df0505;
+  font-family: 'Passion One';
+  font-size: 70px;
+}
+
+.teams-presented {
+  font-family: 'Passion One';
+  font-size: 40px;
+}
+
+.intro-text {
+  font-family: 'Noto Sans Display', sans-serif;
+}
+
+.head-over {
+  font-family: 'Yesteryear', cursive;
+  font-size: 40px;
+}
+
+aside {
+  display: flex;
+  flex-direction: row;
+}
+
+.lead-left {
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+  margin-top: -50px;
+  margin-right: 10px;
+}
+
+.lead-right {
+  display: flex;
+  flex-direction: column;
+  width: 60%;
+  align-self: center;
+}
+
+@media screen and (max-width: 768px) {
+  .parent-02 {
+    flex-direction: column;
+  }
+
+  .intro-text {
+    font-size: 18px;
+  }
+
+  #home-head {
+    font-size: 70px;
+    line-height: 1;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .parent-02 {
+    flex-direction: column;
+  }
+
+  .one {
+    flex-direction: column;
+  }
+
+  .lead-left {
+    display: flex;
+    justify-content: center;
+    width: 80%;
+    margin-top: -50px;
+  }
+
+  #home-head {
+    font-size: 50px;
+    line-height: 0.8;
+  }
+}

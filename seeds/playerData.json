@@ -1,0 +1,178 @@
+[
+  {
+    "name": "LeBron James",
+    "points_scored": 29.8,
+    "rebounds": 8.4,
+    "assists": 7.0,
+    "steals": 0.8,
+    "fantasy_points": 46
+  },
+  {
+    "name": "Stephen Curry",
+    "points_scored": 25.5,
+    "rebounds": 5.2,
+    "assists": 6.3,
+    "steals": 0.8,
+    "fantasy_points": 37.8
+  },
+  {
+    "name": "Kevin Durant",
+    "points_scored": 29.9,
+    "rebounds": 7.4,
+    "assists": 6.4,
+    "steals": 1,
+    "fantasy_points": 44.7
+  },
+  {
+    "name": "Giannis Antetokounmpo",
+    "points_scored": 29.9,
+    "rebounds": 11.6,
+    "assists": 6.4,
+    "steals": 0.4,
+    "fantasy_points": 48.3
+  },
+  {
+    "name": "Luka Doncic",
+    "points_scored": 29,
+    "rebounds": 11.6,
+    "assists": 5.3,
+    "steals": 0.6,
+    "fantasy_points": 46.5
+  },
+  {
+    "name": "Nikola Jokic",
+    "points_scored": 27.1,
+    "rebounds": 13.8,
+    "assists": 7.9,
+    "steals": 1.2,
+    "fantasy_points": 50
+  },
+  {
+    "name": "James Harden",
+    "points_scored": 22,
+    "rebounds": 10.3,
+    "assists": 7.7,
+    "steals": 0.6,
+    "fantasy_points": 40.6
+  },
+  {
+    "name": "Joel Embiid",
+    "points_scored": 30.6,
+    "rebounds": 11.7,
+    "assists": 4.2,
+    "steals": 0.4,
+    "fantasy_points": 46.9
+  },
+  {
+    "name": "Kawhi Leonard",
+    "points_scored": 19.4,
+    "rebounds": 6.1,
+    "assists": 3.7,
+    "steals": 0.7,
+    "fantasy_points": 29.9
+  },
+  {
+    "name": "Brian Allison",
+    "points_scored": 29.8,
+    "rebounds": 10.6,
+    "assists": 4.3,
+    "steals": 0.6,
+    "fantasy_points": 45.3
+  },
+  {
+    "name": "Vanessa Chan",
+    "points_scored": 30,
+    "rebounds": 9.6,
+    "assists": 8.3,
+    "steals": 0.8,
+    "fantasy_points": 48.7
+  },
+  {
+    "name": "William Voigt",
+    "points_scored": 32,
+    "rebounds": 8.4,
+    "assists": 5,
+    "steals": 0.2,
+    "fantasy_points": 46.6
+  },
+  {
+    "name": "Gil Young",
+    "points_scored": 30,
+    "rebounds": 6.4,
+    "assists": 5,
+    "steals": 0.2,
+    "fantasy_points": 41.6
+  },
+  {
+    "name": "Jeremy Lin",
+    "points_scored": 37.4,
+    "rebounds": 2.6,
+    "assists": 2.2,
+    "steals": 0.4,
+    "fantasy_points": 45.1
+  },
+  {
+    "name": "Jayson Tatum",
+    "points_scored": 31.2,
+    "rebounds": 8.5,
+    "assists": 4.3,
+    "steals": 1.1,
+    "fantasy_points": 45.1
+  },
+  {
+    "name": "Ja Morant",
+    "points_scored": 27.2,
+    "rebounds": 5.6,
+    "assists": 7.9,
+    "steals": 1,
+    "fantasy_points": 41.7
+  },
+  {
+    "name": "Devin Booker",
+    "points_scored": 27.1,
+    "rebounds": 4.6,
+    "assists": 5.6,
+    "steals": 0.9,
+    "fantasy_points": 38.2
+  },
+  {
+    "name": "Anthony Davis",
+    "points_scored": 27.4,
+    "rebounds": 12.1,
+    "assists": 2.6,
+    "steals": 1.3,
+    "fantasy_points": 43.4
+  },
+  {
+    "name": "Bradley Beal",
+    "points_scored": 22.5,
+    "rebounds": 3.5,
+    "assists": 5.2,
+    "steals": 1,
+    "fantasy_points": 32.2
+  },
+  {
+    "name": "Paul George",
+    "points_scored": 23.2,
+    "rebounds": 5.9,
+    "assists": 5.3,
+    "steals": 1.5,
+    "fantasy_points": 35.9
+  },
+  {
+    "name": "Trae Young",
+    "points_scored": 27.1,
+    "rebounds": 2.9,
+    "assists": 9.8,
+    "steals": 1,
+    "fantasy_points": 40.8
+  },
+  {
+    "name": "Chris Paul",
+    "points_scored": 13.1,
+    "rebounds": 4.2,
+    "assists": 8.3,
+    "steals": 1.5,
+    "fantasy_points": 27.1
+  }
+]

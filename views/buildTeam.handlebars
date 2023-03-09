@@ -1,0 +1,103 @@
+<div clas='container' style='width: 80vw; margin: auto;'>
+  ​
+  <div class='row' style='margin-bottom: 40px'>
+    <div class='col-12'>
+      <p class="team-build" style='text-align:center;'>
+        Build A Team
+      </p>
+    </div>
+  </div>
+  ​
+  <div class='row justify-content-center' style='margin-bottom: 40px'>
+    <div class='col'>
+      <form style='width: 500px; margin: auto;'>
+        <label for='team-name-input' style='white-space: nowrap;'><h3>Team Name:</h3></label>
+        <input
+          class='form-input'
+          type='text'
+          id='team-name-input'
+          style='width: 300px;'
+        />
+      </form>
+    </div>
+  </div>
+  ​
+  <!-- Player Select Table -->
+  <div class='row' style='margin-bottom: 40px'>
+    <div class='col-12'>
+      ​
+      <p class="select-your">
+        Player Select
+      </p>
+      ​
+      <table
+        class='table'
+        style='width: 100%; font-family: serif; border-style: solid; border-color: black;'
+      >
+        ​
+        <thead class='table-dark'>
+          <tr>
+            <th scope='col'>Name</th>
+            <th scope='col'>Points</th>
+            <th scope='col'>Rebounds</th>
+            <th scope='col'>Assists</th>
+            <th scope='col'>Steals</th>
+            <th scope='col'>Fantasy Points</th>
+            <th scope='col'></th>
+          </tr>
+        </thead>
+        ​
+        <tbody>
+          {{#each playerArray as |player|}}
+            <tr>
+              <th scope='row'>{{player.name}}</th>
+              <th>{{player.points_scored}}</th>
+              <th>{{player.rebounds}}</th>
+              <th>{{player.assists}}</th>
+              <th>{{player.steals}}</th>
+              <th>{{player.fantasy_points}}</th>
+              <th><button
+                  data-id={{player.id}}
+                  class='material-symbols-outlined add-player'
+                  style='background-color: green;'
+                >add_circle</button></th>
+            </tr>
+          {{/each}}
+        </tbody>
+        ​
+      </table>
+      ​
+    </div>
+  </div>
+  ​
+  <!-- Your Team Table -->
+  <div class='row' id="team-table-container" style='margin-bottom: 40px; display: none;'>
+    <div class='col-12'>
+      ​
+      <p class="select-your">
+        Your Team
+      </p>
+      ​
+      <div class='container-fluid g-0'>
+        <div class='row'>
+          <div class='col-9'>
+            <table
+              class='table'
+              style='width: 100%; font-family: serif; border-style: solid; border-color: black;'
+            >
+              ​
+              <tbody id="team-table">
+                ​
+              </tbody>
+              ​
+            </table>
+          </div>
+          <div class='col-3' style='align-self: flex-end;'>
+            <button id="submit-team" type="submit" style='background-color: green; color: white; font-size: x-large;  white-space: nowrap;'>Create Team</button>
+          </div>
+        </div>
+      </div>
+      ​
+    </div>
+  </div>
+</div>

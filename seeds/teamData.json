@@ -1,0 +1,23 @@
+[
+  {
+    "name": "Bullets",
+    "user_id": 1,
+    "player_one": 1,
+    "player_two": 3,
+    "player_three": 3
+  },
+  {
+    "name": "Ballerz",
+    "user_id": 2,
+    "player_one": 4,
+    "player_two": 11,
+    "player_three": 3
+  },
+  {
+    "name": "Bangers",
+    "user_id": 3,
+    "player_one": 7,
+    "player_two": 12,
+    "player_three": 3
+  }
+]
