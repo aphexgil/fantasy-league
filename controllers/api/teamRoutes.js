@@ -33,7 +33,7 @@ router.post('/', async (req, res) => {
   try {
     const newTeam = await Team.create({
       ...req.body,
-      user_id: 1,
+      user_id: req.session.user_id,
     });
     res.status(200).json(newTeam);
   } catch (err) {

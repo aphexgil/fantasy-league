@@ -57,6 +57,7 @@ router.get('/buildteam', withAuth, async (req, res) => {
 // we want to find and render the team that matches the user_id
 
 router.get('/dashboard', withAuth, async (req, res) => {
+  console.log('here');
   try {
     const teamData = await Team.findByPk(req.session.user_id, {
       include: [
