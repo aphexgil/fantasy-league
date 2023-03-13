@@ -43,10 +43,10 @@ router.get('/buildteam', withAuth, async (req, res) => {
       const removePlayer = players.splice(randomNum, 1);
       playerArray.push(removePlayer[0]);
     }
-    console.log(playerArray);
 
     res.render('buildTeam', {
       logged_in: req.session.logged_in,
+      has_team: req.session.has_team,
       playerArray,
     });
   } catch (err) {
@@ -57,7 +57,6 @@ router.get('/buildteam', withAuth, async (req, res) => {
 // we want to find and render the team that matches the user_id
 
 router.get('/dashboard', withAuth, async (req, res) => {
-  console.log('here');
   try {
     const teamData = await Team.findByPk(req.session.user_id, {
       include: [
@@ -70,6 +69,7 @@ router.get('/dashboard', withAuth, async (req, res) => {
 
     res.render('dashboard', {
       logged_in: req.session.logged_in,
+      has_team: req.session.has_team,
       team,
     });
   } catch (err) {
@@ -124,6 +124,7 @@ router.get('/results', withAuth, async (req, res) => {
 
     res.render('results', {
       logged_in: req.session.logged_in,
+      has_team: req.session.has_team,
       today,
       teamsInfo,
     });

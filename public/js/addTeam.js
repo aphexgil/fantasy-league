@@ -16,13 +16,15 @@ const addTeam = async (player_ids) => {
         .then((resp) => resp.json())
         .then((data) => {
             console.log('Successful POST request:', data);
-            return data;
-
+            document.location.replace('/dashboard');
         })
         .catch((err) => {console.error(err)});
     
-    
-    window.location.replace('/dashboard');
+    if(resp.ok){
+        document.location.replace('/dashboard');
+    } else {
+        alert(resp.statusText);
+    }
 }
 
 $('#submit-team').on('click', function(event){

@@ -36,7 +36,7 @@
   </head>
 
   <body>
-    <div class='flex-column justify-space-around'>
+    <div class='justify-space-around'>
 
       <header
         style="width: 100%; font-family: 'Passion One'; font-size: 30px; margin-top: 20px;"
@@ -46,30 +46,37 @@
 
             <!--Image-->
             <div class='col-12 col-lg-6'>
-              <img src='assets/bball.png' style='width:100%;' />
+              <img src='assets/bball.png' style='width: 500px;' />
             </div>
 
             <!-- Navbar -->
             <div class='col-12 col-lg-6' style='align-self: flex-end;'>
               <div
-                style='display: flex; flex-direction: row; justify-content: center; gap: 5vw;'
+                style='display: flex; flex-direction: row; justify-content: center; gap: 20px;'
               >
                 <div style='align-self: center;'>
                   <a style='text-decoration:none;' href='/'>Home</a>
                 </div>
                 {{#if logged_in}}
                   <div style='align-self: center;'>
+                    {{#if has_team}}
                     <a
-                      style='text-decoration:none;'
+                      style='text-decoration:none; white-space: nowrap;'
                       href='/dashboard'
                     >Dashboard</a>
+                    {{else}}
+                    <a
+                      style='text-decoration:none; white-space: nowrap;'
+                      href='/buildteam'
+                    >Build Team</a>
+                    {{/if}}
                   </div>
                   <div style='align-self: center;'>
                     <a style='text-decoration:none;' href='/results'>Results</a>
                   </div>
-                  <button class='no-button' id='logout'>Log Out</button>
+                  <button class='no-button' id='logout' style="white-space: nowrap;">Log Out</button>
                 {{else}}
-                  <a style='text-decoration:none;' href='/login'>Log In</a>
+                  <a style='text-decoration:none; white-space: nowrap;' href='/login'>Log In</a>
                 {{/if}}
               </div>
             </div>

@@ -2,32 +2,34 @@
 <div class="row-cols-1" style="display: flex; flex-direction: column; justify-content: center; font-family: 'Passion One'; align-items: center;">
 <!-- <div class="grid gap-0 column-gap-3"> -->
 
-<div class="col-md-6 column-gap-3" style="margin-bottom: 30px; width: 500px; margin-top: 50px;">
+<div class="col-md-6 column-gap-3 login-box" style="width: 370px;">
   
   <h2>Log In</h2>
 
-  <div style="border-style: solid; border-color: black;">
+  <div style="border-style: solid; border-color: black; padding: 0px;">
     <form class="form login-form">
-      <div style="display: flex; flex-direction: column; justify-content: center; margin-left: 50px;">
+      <div style="display: flex; flex-direction: column; justify-content: center;">
 
-          <div class="form-group" style="margin-top: 20px; margin-left: 20%; font-size: 20px;">
-            <label for="email-login">Email: </label>
-            <input class="form-input" type="text" id="email-login"/>
+          <div class="form-group" style="margin-top: 20px; font-size: 20px;">
+            <label for="email-login" style="width: 90px; text-align: right;">Email: </label>
+            <input class="form-input" type="text" id="email-login" style="width: 250px;"/>
           </div>
-          <div class="form-group" style="margin-top: 20px; margin-bottom: 20px; margin-left: 20%; font-size: 20px;">
-            <label for="password-login">Password: </label>
-            <input class="form-input" type="password" id="password-login" />
+          <div class="form-group" style="margin-top: 20px; margin-bottom: 20px; font-size: 20px;">
+            <label for="password-login" style="width: 90px; text-align: right;">Password: </label>
+            <input class="form-input" type="password" id="password-login" style="width: 250px;"/>
           </div>
       </div>
         
       </div>
-      <div class="form-group" style="margin-bottom: 20px;">
-          <button class="btn btn-primary" type="submit" style="margin-top: 20px; margin-left: 400px;">LOGIN</button>
-        </div>
+
+      <a class="show-signup" style="cursor: pointer;">Sign Up Instead</a>
+      <div class="form-group" style="margin-bottom: 0px;">
+        <button class="btn btn-primary" type="submit" style="margin-top: 0px; float:right; margin-right: 20px;">LOGIN</button>
+      </div>
     </form>
   </div>
 
-  <div class="col-md-6" style="width: 500px;">
+  <div class="col-md-6 signup-box" style="display: none;">
     
     <h2>Sign Up</h2>
     <div style="border-style: solid; border-color: black;">
@@ -38,32 +40,35 @@
 
 
       <form class="form signup-form">
-        <div style="display: flex; flex-direction: column; justify-content: center; margin-left: 50px;">
+        <div style="display: flex; flex-direction: column; justify-content: center; padding: 10px;">
 
-          <div class="form-group" style="margin-top: 20px; margin-left: 20%; font-size: 20px; ">
-            <label for="name-signup">Name:</label>
-            <input class="form-input" type="text" id="name-signup" />
+          <div class="form-group" style="margin-top: 20px; font-size: 20px; ">
+            <label for="name-signup" style="width: 90px; text-align: right;">Username:</label>
+            <input class="form-input" type="text" id="name-signup" style="width: 250px;"/>
           </div>
-          <div class="form-group" style="margin-top: 20px; margin-left: 20%; font-size: 20px; ">
-            <label for="email-signup">Email:</label>
-            <input class="form-input" type="text" id="email-signup" />
+          <div class="form-group" style="margin-top: 20px; font-size: 20px; ">
+            <label for="email-signup" style="width: 90px; text-align: right;">Email:</label>
+            <input class="form-input" type="text" id="email-signup" style="width: 250px;"/>
           </div>
-          <div class="form-group" style="margin-top: 20px; margin-left: 20%; margin-bottom: 20px; font-size: 20px; ">
-            <label for="password-signup">Password:</label>
-            <input class="form-input" type="password" id="password-signup" />
-            <br>
+          <div class="form-group" style="margin-top: 20px; margin-bottom: 20px; font-size: 20px; ">
+            <label for="password-signup" style="width: 90px; text-align: right;">Password:</label>
+            <input class="form-input" type="password" id="password-signup" style="width: 250px;"/>
+          </div>
+          <div style="margin-left: 94px;">
             password must have 8 characters
           </div>
             
           
         </div>
-        </div>
-        <div class="form-group">
-            <button class="btn btn-primary" type="submit" style="margin-left: 400px; margin-top: 20px; margin-bottom: 90px;">SIGNUP</button>
-          </div>
-      </form>
-      </div>
     </div>
+
+
+      <a class="show-login" style="cursor: pointer;">Log In Instead</a>
+      <div class="form-group">
+        <button class="btn btn-primary" type="submit" style="margin-top: 0px; float:right; margin-right: 20px;">SIGNUP</button>
+      </div>
+       </form>
+  </div>
 
     <script src='/js/login.js'></script>
 

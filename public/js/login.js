@@ -14,9 +14,17 @@ const loginFormHandler = async (event) => {
       headers: { 'Content-Type': 'application/json' },
     });
 
+
     if (response.ok) {
       // If successful, redirect the browser to the profile page
-      document.location.replace('/buildteam');
+
+      const body = await response.json();
+
+      if(body.has_team){
+        document.location.replace('/dashboard');
+      }else{
+        document.location.replace('/buildteam');
+      }
     } else {
       alert(response.statusText);
     }
@@ -35,8 +43,6 @@ const signupFormHandler = async (event) => {
       body: JSON.stringify({ username, email, password }),
       headers: { 'Content-Type': 'application/json' },
     });
-
-    console.log(response);
     if (response.ok) {
       document.location.replace('/buildteam');
     } else {
@@ -45,6 +51,17 @@ const signupFormHandler = async (event) => {
   }
 };
 
+const showLogin = async (event) => {
+  event.preventDefault();
+  document.querySelector('.signup-box').setAttribute('style', 'display: none;');
+  document.querySelector('.login-box').setAttribute('style', 'width: 370px; display: block;');
+}
+const showSignup = async (event) => {
+  event.preventDefault();
+  document.querySelector('.login-box').setAttribute('style', 'display: none;');
+  document.querySelector('.signup-box').setAttribute('style', 'width: 380px; display: block;');
+}
+
 document
   .querySelector('.login-form')
   .addEventListener('submit', loginFormHandler);
@@ -52,3 +69,11 @@ document
 document
   .querySelector('.signup-form')
   .addEventListener('submit', signupFormHandler);
+
+document
+  .querySelector('.show-login')
+  .addEventListener('click', showLogin);
+
+document
+  .querySelector('.show-signup')
+  .addEventListener('click', showSignup);
