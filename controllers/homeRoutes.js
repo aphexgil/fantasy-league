@@ -7,6 +7,7 @@ router.get('/', async (req, res) => {
   try {
     res.render('homepage', {
       logged_in: req.session.logged_in,
+      has_team: req.session.has_team
     });
   } catch (err) {
     res.status(500).json(err);
@@ -25,6 +26,7 @@ router.get('/createteam', withAuth, async (req, res) => {
   try {
     res.render('createteam', {
       logged_in: req.session.logged_in,
+      has_team: req.session.has_team
     });
   } catch (err) {
     res.status(500).json(err);
